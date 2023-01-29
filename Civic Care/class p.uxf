@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>300</y>
+      <w>360</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>System User
+--
+-name:String=blank
+-age:Numeric
+-gender:String
+_-id:String_
+--
++userDetails(name:String, age:Numeric, gender:String)
++searchAppointment()
++registration(username:String, password:String)
++orderMedicine(name:String)
++makePayment():float
++receiveMed()
++getHealthcaretips()
++makeEmergencycall(location:Location)
++bloodDonation()
++fundDonation()
++searchAppointment()
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1170</x>
+      <y>300</y>
+      <w>310</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>Administrator
+--
+-name:String
+-pass:String
+
+
+--
++providehealthcaretips()
++recommendation(location:Location)
++manageuser()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>300</y>
+      <w>350</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>Service provider
+--
+-pname:String
+-medname:String
+-cost:Int
+-quantity:Int
+--
++checkMedAvailability():Boolean
++createMedBill(medname:String, cost:Int, quantity:Int)
++getPayment():Float
++emergencycall(location:Location)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>460</x>
+      <y>390</y>
+      <w>200</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..*
+m2=1..*
+</panel_attributes>
+    <additional_attributes>180.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>50</x>
+      <y>20</y>
+      <w>1520</w>
+      <h>920</h>
+    </coordinates>
+    <panel_attributes>
+CIVIC CARE 
+halign=center</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>990</x>
+      <y>390</y>
+      <w>200</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..*
+m2=1
+</panel_attributes>
+    <additional_attributes>10.0;20.0;180.0;20.0</additional_attributes>
+  </element>
+</diagram>
